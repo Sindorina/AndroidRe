@@ -1,0 +1,12 @@
+package cn.signp.banner
+
+import androidx.lifecycle.LifecycleObserver
+import androidx.lifecycle.LifecycleOwner
+
+interface BannerLifecycleObserver :LifecycleObserver {
+    fun onStop(owner: LifecycleOwner)
+
+    fun onStart(owner: LifecycleOwner)
+
+    fun onDestroy(owner: LifecycleOwner)
+}
